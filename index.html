@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juego El Ahorcado</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1 class="titulo">EL AHORCADO</h1>
+
+            <button class="btn" id="btnIniciar">INICIAR JUEGO</button>
+
+            <input type="text" class="text-input" id="inputPalabra" placeholder="Ingrese palabra para agregar en el listado"
+                onkeypress="return /[A-Z]/i.test(event.key)" maxlength="16">
+
+            <button class="btn" id="btnAgregar">AGREGAR PALABRA</button>
+
+            <div class="container-canvas">
+                <canvas id="ahorcado" width="1200px" height="800px"></canvas>
+            </div>
+
+            <button class="btn" id="btnReiniciar">REINICIAR JUEGO</button>
+
+        </div>
+
+        <footer class="footer">
+            
+            <h3 class="footer__copyright">Copyright &copy; 2022 Oscar Garzon</h3>
+
+        </footer>
+
+        <script src="./javascript/canvas.js"></script>
+        <script src="./javascript/palabras.js"></script>
+        <script src="./javascript/juego.js"></script>
+
+    </body>
+
+</html>
